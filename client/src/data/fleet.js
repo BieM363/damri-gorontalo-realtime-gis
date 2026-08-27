@@ -1,0 +1,215 @@
+/**
+ * DAMRI Gorontalo Fleet Dataset
+ * Maintained & Engineered by: BieM363 (https://github.com/BieM363)
+ */
+
+export const initialFleet = [
+  {
+    id: "BUS-DMR-01",
+    label: "DAMRI 01",
+    plateNumber: "DM 7001 GA",
+    model: "Mercedes-Benz OF 917",
+    capacity: 24,
+    routeId: "route-airport",
+    driver: {
+      name: "Rahmat Monoarfa",
+      phone: "0812-4412-8891",
+      rating: 4.9,
+      experienceYears: 7,
+      photoUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: 1,
+    progress: 0.20,
+    speedKmh: 48,
+    occupancy: 18,
+    fuelPercent: 88,
+    engineTempC: 84,
+    odometerKm: 142380,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 4
+  },
+  {
+    id: "BUS-DMR-02",
+    label: "DAMRI 02",
+    plateNumber: "DM 7012 GA",
+    model: "Hino FB 130 Perintis",
+    capacity: 28,
+    routeId: "route-kwandang",
+    driver: {
+      name: "Mohamad Daud",
+      phone: "0852-9901-4432",
+      rating: 4.8,
+      experienceYears: 11,
+      photoUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: 1,
+    progress: 0.45,
+    speedKmh: 52,
+    occupancy: 22,
+    fuelPercent: 74,
+    engineTempC: 86,
+    odometerKm: 218900,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 4
+  },
+  {
+    id: "BUS-DMR-03",
+    label: "DAMRI 03",
+    plateNumber: "DM 7025 GA",
+    model: "Hino RK8 R260 Jetbus",
+    capacity: 36,
+    routeId: "route-marisa",
+    driver: {
+      name: "Ismail Hasan",
+      phone: "0813-5567-1120",
+      rating: 4.95,
+      experienceYears: 14,
+      photoUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: 1,
+    progress: 0.55,
+    speedKmh: 58,
+    occupancy: 31,
+    fuelPercent: 62,
+    engineTempC: 88,
+    odometerKm: 340120,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 6
+  },
+  {
+    id: "BUS-DMR-04",
+    label: "DAMRI 04",
+    plateNumber: "DM 7033 GA",
+    model: "Mercedes-Benz OH 1626 Royal",
+    capacity: 30,
+    routeId: "route-suwawa",
+    driver: {
+      name: "Hendrik Gobel",
+      phone: "0821-8877-3341",
+      rating: 5.0,
+      experienceYears: 18,
+      photoUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: 1,
+    progress: 0.35,
+    speedKmh: 42,
+    occupancy: 19,
+    fuelPercent: 80,
+    engineTempC: 85,
+    odometerKm: 412500,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 6
+  },
+  {
+    id: "BUS-DMR-05",
+    label: "DAMRI 05",
+    plateNumber: "DM 7040 GA",
+    model: "Isuzu Elf NLR Microbus",
+    capacity: 16,
+    routeId: "route-city-tour",
+    driver: {
+      name: "Faisal Katili",
+      phone: "0896-1234-7788",
+      rating: 4.75,
+      experienceYears: 5,
+      photoUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: 1,
+    progress: 0.30,
+    speedKmh: 36,
+    occupancy: 9,
+    fuelPercent: 92,
+    engineTempC: 82,
+    odometerKm: 98400,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 2
+  },
+  {
+    id: "BUS-DMR-06",
+    label: "DAMRI 06",
+    plateNumber: "DM 7018 GA",
+    model: "Hino FB 130 Perintis",
+    capacity: 28,
+    routeId: "route-kwandang",
+    driver: {
+      name: "Syamsul Bahri",
+      phone: "0853-4011-9921",
+      rating: 4.88,
+      experienceYears: 9,
+      photoUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: -1, // Arah balik Kwandang -> Dungingi
+    progress: 0.80,
+    speedKmh: 50,
+    occupancy: 14,
+    fuelPercent: 58,
+    engineTempC: 87,
+    odometerKm: 275300,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 4
+  },
+  {
+    id: "BUS-DMR-07",
+    label: "DAMRI 07",
+    plateNumber: "DM 7008 GA",
+    model: "Mercedes-Benz OF 917",
+    capacity: 24,
+    routeId: "route-airport",
+    driver: {
+      name: "Zulkifli Habie",
+      phone: "0812-7788-9900",
+      rating: 4.92,
+      experienceYears: 8,
+      photoUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "in_transit",
+    direction: -1, // Arah balik Bandara -> Dungingi
+    progress: 0.70,
+    speedKmh: 46,
+    occupancy: 20,
+    fuelPercent: 81,
+    engineTempC: 83,
+    odometerKm: 167200,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 4
+  },
+  {
+    id: "BUS-DMR-08",
+    label: "DAMRI 08",
+    plateNumber: "DM 7029 GA",
+    model: "Hino RK8 R260 Jetbus",
+    capacity: 36,
+    routeId: "route-marisa",
+    driver: {
+      name: "Lukman Niode",
+      phone: "0813-8822-1144",
+      rating: 4.85,
+      experienceYears: 12,
+      photoUrl: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80"
+    },
+    status: "dwelling",
+    direction: -1,
+    progress: 0.65,
+    speedKmh: 0,
+    occupancy: 28,
+    fuelPercent: 49,
+    engineTempC: 79,
+    odometerKm: 389400,
+    acStatus: "active",
+    wifiActive: true,
+    cctvOnline: 6
+  }
+];

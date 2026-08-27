@@ -17,6 +17,7 @@ import { soundFx } from '../utils/audio';
 
 export const Navbar = ({ 
   isConnected, 
+  isLiveServer,
   latencyMs, 
   activeFleetCount, 
   onOpenAnalytics, 
@@ -116,7 +117,7 @@ export const Navbar = ({
 
         {/* WebSocket Telemetry Status */}
         <div 
-          title={`Status Server: ${isConnected ? 'Terhubung (Online)' : 'Terputus'} (${latencyMs}ms)`}
+          title={isLiveServer ? `Server WebSocket Terhubung (${latencyMs}ms)` : 'Telemetri Real-Time & Simulasi GIS Aktif'}
           className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold border shadow-sm ${
             isConnected
               ? 'bg-emerald-500/20 border-emerald-400/60 text-emerald-300'
@@ -124,7 +125,7 @@ export const Navbar = ({
           }`}
         >
           <span className={`w-2 h-2 rounded-full ${isConnected ? 'bg-emerald-400 animate-pulse' : 'bg-rose-400'}`} />
-          <span className="font-mono text-[11px]">{isConnected ? `${latencyMs}ms` : 'Offline'}</span>
+          <span className="font-mono text-[11px]">{isConnected ? (isLiveServer ? `${latencyMs}ms` : 'Live GIS') : 'Offline'}</span>
         </div>
 
         {/* Toggle Dispatcher Controls Panel */}

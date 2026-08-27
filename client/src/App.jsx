@@ -20,6 +20,7 @@ export function App() {
 
   const {
     isConnected,
+    isLiveServer,
     latencyMs,
     routes,
     stops,
@@ -42,6 +43,7 @@ export function App() {
       {/* Top Navigation Bar */}
       <Navbar
         isConnected={isConnected}
+        isLiveServer={isLiveServer}
         latencyMs={latencyMs}
         activeFleetCount={fleet.length}
         onOpenAnalytics={() => setIsAnalyticsOpen(true)}
