@@ -32,22 +32,22 @@ export const getDensityBadge = (occupancy, capacity) => {
     return {
       label: 'Penuh (Hampir Penuh)',
       status: 'full',
-      color: 'text-rose-400 bg-rose-500/20 border-rose-500/40',
-      dotColor: '#f43f5e'
+      color: 'text-rose-700 bg-rose-50 border-rose-300 font-bold',
+      dotColor: '#e11d48'
     };
   }
   if (ratio >= 0.6) {
     return {
       label: 'Sedang (Kursi Terbatas)',
       status: 'medium',
-      color: 'text-amber-400 bg-amber-500/20 border-amber-500/40',
-      dotColor: '#fbbf24'
+      color: 'text-amber-800 bg-amber-50 border-amber-300 font-bold',
+      dotColor: '#d97706'
     };
   }
   return {
     label: 'Tersedia (Banyak Kursi Kosong)',
     status: 'low',
-    color: 'text-emerald-400 bg-emerald-500/20 border-emerald-500/40',
-    dotColor: '#10b981'
+    color: 'text-emerald-800 bg-emerald-50 border-emerald-300 font-bold',
+    dotColor: '#059669'
   };
 };

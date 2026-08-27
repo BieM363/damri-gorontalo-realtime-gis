@@ -20,8 +20,9 @@ export const useSocket = () => {
   const socketRef = useRef(null);
 
   useEffect(() => {
-    // Connect to WebSocket backend
-    const socket = io(window.location.origin, {
+    // Connect to WebSocket backend (supports custom VITE_API_URL if deployed to Vercel + Render/Railway)
+    const backendUrl = import.meta.env.VITE_API_URL || window.location.origin;
+    const socket = io(backendUrl, {
       reconnectionAttempts: 10,
       reconnectionDelay: 1000,
       transports: ['websocket', 'polling']

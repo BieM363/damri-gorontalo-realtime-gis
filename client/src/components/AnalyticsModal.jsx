@@ -18,7 +18,8 @@ export const AnalyticsModal = ({ isOpen, onClose, routes = [], fleet = [] }) => 
 
   useEffect(() => {
     if (isOpen) {
-      fetch('/api/stats')
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      fetch(`${apiUrl}/api/stats`)
         .then(res => res.json())
         .then(data => {
           if (data.success) setStats(data.data);

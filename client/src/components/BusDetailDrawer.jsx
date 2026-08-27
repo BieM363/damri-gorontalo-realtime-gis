@@ -118,9 +118,9 @@ export const BusDetailDrawer = ({
             <div className="text-lg font-mono font-black text-slate-900">
               {bus.occupancy} / {bus.capacity} <span className="text-xs text-slate-500 font-normal">Seat</span>
             </div>
-            <div className={`text-[10px] font-bold ${density.color.split(' ')[0]}`}>
+            <span className={`inline-block px-2 py-0.5 rounded text-[10px] ${density.color}`}>
               {density.label.split(' ')[0]} ({bus.occupancyPercent}%)
-            </div>
+            </span>
           </div>
 
           <div className="p-3 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">
