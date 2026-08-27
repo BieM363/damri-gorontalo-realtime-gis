@@ -11,7 +11,6 @@ import {
   Eye,
   EyeOff,
   Radio,
-  Github,
   Code2
 } from 'lucide-react';
 import { soundFx } from '../utils/audio';
